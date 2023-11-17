@@ -28,7 +28,7 @@
   #signup-page {
     /* visibility: hidden; */
     margin: 0 auto 0 auto;
-    gap: 50px;
+    gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +101,7 @@
     color: white;
     background-color: hsl(234, 29%, 20%);
     border-radius: 10px;
+    border: none;
   }
   #send-button:hover {
     cursor: pointer;
@@ -111,11 +112,11 @@
     );
   }
   #desktop-img {
-    position: absolute;
-    width: 300px;
+    width: 100%;
   }
   #mobile-img {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
   } 
   .formImg{
     justify-content: center;
@@ -125,6 +126,7 @@
   }
 
   .success-msg {
+    display: none;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -183,32 +185,39 @@
 }
 
 @media (max-width: 500px) {
-  /* #desktop-img {
+   #desktop-img {
+    display: none;
     visibility: hidden;
-  } */
+  } 
+  
   main {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-color: hsl(235, 18%, 26%);
   }
   #signup-page {
     /* visibility: hidden; */
-    margin: 0 auto 0 auto;
+    margin: 0;
     gap: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    width: 100%;
-    height: fit-content;
+    width: 100vw;
+    height: 100vh;
     background-color: white;
-    padding: 20px 20px 20px 50px;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
+  .formImg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+  }
+  #mobile-img{
+    display: flex;
+    visibility: visible;
+    width: 100%;
+  }     
 }
