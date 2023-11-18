@@ -194,6 +194,81 @@
 
 
 @media  (max-width: 850px) {
- 
-   
+    *,body{
+      padding: 0;
+      margin: 0;
+      font-family:"Roboto", sans-serif ;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+    }
+    main {
+      margin: 0;
+      padding: 0;
+      /* width: 100vw;
+      height: 100vh; */
+      background-color: hsl(235, 18%, 26%);
+    }
+    #signup-page {
+      /* visibility: hidden; */
+      margin: 0;
+      gap: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      width: 100%;
+      /* min-width: 60%;
+      max-width: 65%; */
+      height: fit-content;
+      background-color: white;
+      padding: 20px;
+      border-radius: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+    .text {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      height: fit-content;
+    }
+    .text h1 {
+      margin-bottom: 20px;
+      font-size: 45px;
+      font-weight: 700;
+      color: hsl(235, 18%, 26%);
+    }
+    #form-list {
+      margin: 25px 0 30px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: left;
+      align-items: center;
+    }
+    .checks {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      justify-content: left;
+      align-items: center;
+      flex-direction: row;
+    }
+    #form {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      gap: 10px;
+      align-items: flex-start;
+      flex-direction: column;
+    }
 }
