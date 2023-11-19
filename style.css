@@ -204,12 +204,10 @@
     main {
       margin: 0;
       padding: 0;
-      /* width: 100vw;
-      height: 100vh; */
-      background-color: hsl(235, 18%, 26%);
     }
     #signup-page {
-      /* visibility: hidden; */
+      display: none;
+      visibility: hidden;
       margin: 0;
       gap: 30px;
       display: flex;
@@ -319,20 +317,60 @@
       height: 100%;
     } 
     .success-msg {
-      display: none;
-      visibility: hidden;
+      /* display: none;
+      visibility: hidden; */
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: auto;
-      padding: 50px;
-      width: 30%;
-      height: fit-content;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100%;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
       background-color: white;
-      border-radius: 20px;
     }
+    .success-msg p {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    #msg-content {
+      margin: 0;
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+      gap: 20px;
+      flex-direction: column;
+      margin: 50% 0 0 0 ;
+      width: 80%;
+      height: 100%;
+    }
+    #msg-content h1 {
+      color: hsl(234, 29%, 20%);
+      font-size: 45px;
+      font-weight: 700;
+    }
+    #sus-button {
+      padding: 0;
+      margin-bottom: -30px;
+      text-align: center;
+      width: 100%;
+      height: 50px;
+      color: white;
+      border: none;
+      font-size: 15px;
+      background-color: hsl(234, 29%, 20%);
+      border-radius: 10px;
+      font-weight: bolder;
+    }
+    #sus-button:active {
+      background: linear-gradient(
+        to bottom right,
+        hsl(350, 100%, 67%),
+        rgb(238, 39, 39)
+      );
+    }
+  
 }
