@@ -317,8 +317,8 @@
       height: 100%;
     } 
     .success-msg {
-      display: none;
-      visibility: hidden;
+      /* display: none;
+      visibility: hidden; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -339,7 +339,7 @@
     #msg-content {
       margin: 0;
       display: flex;
-      justify-content: left;
+      justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
       flex-direction: column;
