@@ -12,8 +12,8 @@ function myFunction() {
     signupPage.style.visibility = "hidden";
     successMsg.style.visibility = "visible";
     emailValue.innerHTML= emailInput.value;
-    errorMsg.style.visibility = "visible";
   } else {
+    errorMsg.style.display = "flex";
     emailInput.style.borderColor = "red";
     emailInput.style.color = "red";
     emailInput.style.backgroundColor = errorColor;

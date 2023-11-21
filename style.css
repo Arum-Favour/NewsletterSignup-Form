@@ -97,7 +97,7 @@
   }
   #errorMsg{
     color: red;
-    visibility: hidden;
+    display: none;
   }
   #emailLabel{
     width: 80%;
@@ -289,7 +289,6 @@
   }
   label {
     font-weight: bolder;
-    width: 100%;
     height: auto;
   }
   #email-input {
@@ -367,6 +366,17 @@
     font-size: 45px;
     font-weight: 700;
     line-height: 40px;
+  }
+  #errorMsg{
+    color: red;
+    display: none;
+    /* font-size: 12px; */
+  }
+  #emailLabel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   #sus-button {
     padding: 0;
