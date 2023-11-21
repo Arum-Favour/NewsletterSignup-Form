@@ -116,7 +116,7 @@
   }
   #mobile-img {
     display: none;
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   .formImg {
     justify-content: center;
