@@ -1,14 +1,21 @@
-function myFunction() {
-  var emailInput = document.getElementById("email-input");
-  var signupPage = document.getElementById("signup-page");
-  var successMsg = document.getElementsByClassName("success-msg");
+const emailInput = document.getElementById("email-input");
+const signupPage = document.getElementById("signup-page");
+const successMsg = document.querySelector(".success-msg");
 
+function myFunction() {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  if (emailInput) {
-    signupPage.style.visibility = "hidden";
+  if (emailInput.value.match(validRegex)) {
     successMsg.style.display = "flex";
+    signupPage.style.visibility = "hidden";
     successMsg.style.visibility = "visible";
+  } else {
+    emailInput.style.borderColor = "red";
   }
-  // alert("A Button was clicked");
+}
+
+function dismissContent() {
+  successMsg.style.display = "none";
+  signupPage.style.visibility = "visible";
+  successMsg.style.visibility = "hidden";
 }
