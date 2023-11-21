@@ -95,6 +95,16 @@
     border-radius: 5px;
     border: 1px solid gainsboro;
   }
+  #errorMsg{
+    color: red;
+    visibility: hidden;
+  }
+  #emailLabel{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   #send-button {
     text-align: center;
     font-weight: bold;
@@ -133,7 +143,6 @@
   .success-msg {
     display: none;
     visibility: hidden;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     margin: auto;

@@ -52,7 +52,10 @@
             </div>
           </div>
           <form id="form" action="#">
-            <label for="email-input">Email address </label>
+            <div id="emailLabel">
+              <label for="email-input">Email address </label>
+              <p id="errorMsg">Valid email required</p>
+            </div>
             <input
               id="email-input"
               name="email"
@@ -94,7 +97,12 @@
             </p>
           </div>
           <div id="dismiss-btn">
-            <input id="sus-button" type="button" value=" Dismiss message" onclick="dismissContent()"/>
+            <input
+              id="sus-button"
+              type="button"
+              value=" Dismiss message"
+              onclick="dismissContent()"
+            />
           </div>
         </div>
         <!-- Success message end -->
